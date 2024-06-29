@@ -1,0 +1,97 @@
+.slider {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    max-width: 1519px;
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+ @keyframes slide {
+    0% { transform: translateX(0%); }
+    10% { transform: translateX(-100%); }
+    20% { transform: translateX(-200%); }
+    30% { transform: translateX(-300%); }
+    40% { transform: translateX(-400%); }
+    50% { transform: translateX(-500%); }
+    60% { transform: translateX(-600%); }
+    70% { transform: translateX(-700%); }
+    80% { transform: translateX(-800%); }
+    90% { transform: translateX(-900%); }
+    100% { transform: translateX(0%); }
+} 
+
+
+.hero-para{
+    position: absolute;
+    padding: 140px 0px 0px 140px;
+    width: 59%;
+    color: white;
+}
+
+.hero-para h1{
+    font-size: 61px;
+    font-family: var(--font-ibm);
+}
+
+.hero-para p{
+    font-size: 23px;
+    padding: 23px 0px;
+    font-size: var(--font-que);
+
+}
+
+.hero-para button{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 128px;
+    height: 42px;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .hero-img{
+        max-width: 426px;
+        /* width: 100%; */
+        max-height: 226px;
+        /* height: 100%; */
+
+    }
+
+    .hero-para{
+        width: 70%;
+        padding: 45px 0px 0px 31px;
+    }
+
+    .hero-para h1{
+        font-size: 33px;
+    }
+
+    .hero-para p {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+
+    .hero-para button{
+        width: 94px;
+        height: 32px;
+    }
+    
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+
+    
+}
