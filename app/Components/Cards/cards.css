@@ -1,3 +1,4 @@
+
 .cards-head{
     font-size: 32px;
     text-align: center;
@@ -27,11 +28,14 @@
 .cards-item{
     max-width: 270px;
     width: 100%;
+    /* width: calc(25% - 20px); */
     border: solid 1px #ddd;
     padding: 24px;
     display: grid;
     gap: 10px;
     margin: 12px 12px 20px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 
 }
 
@@ -51,6 +55,13 @@
     color: #999;
     display: grid;
     gap: 10px;
+    max-height: 12em; 
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.cards-para.expanded {
+    max-height: none;
 }
 
 .cards-item-line{
@@ -89,4 +100,4 @@
         padding: 37px 24px 15px;
     }
 
-}
+} 
