@@ -39,6 +39,7 @@
 
 }
 
+
 .cards-item p{
     color: #999;
     font-family: var(--font-questrial);
@@ -75,6 +76,7 @@
     border-bottom: solid 1px orangered ;
     width: 70px;
     font-weight: normal;
+    cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 650px) {

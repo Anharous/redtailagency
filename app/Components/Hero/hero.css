@@ -55,10 +55,14 @@
 
 .hero-para button{
     border: none;
-    background-color: orangered;
+    background-color: #ff6000;
     color: white;
     width: 128px;
     height: 42px;
+}
+
+.hero-para button:hover{
+    box-shadow: #ff6000;
 }
 
 @media (min-width: 320px) and (max-width: 650px) {

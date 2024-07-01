@@ -43,6 +43,10 @@
     margin-top: 20px;
 }
 
+.question img{
+    cursor: pointer;
+}
+
 .accordion-para{
     display: grid;
     align-items: center;

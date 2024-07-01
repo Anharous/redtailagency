@@ -1,14 +1,7 @@
 'use client'
 import Image from "next/image";
 import  "./form.css";
-
-
-// import { motion } from 'framer-motion';
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
-
-
-
-
 
 interface FormData {
   firstname: string;
@@ -42,12 +35,12 @@ export default function page() {
 
   const validate = () => {
     let formErrors: Partial<FormData> = {};
-    if (!formData.firstname) formErrors.firstname = 'FirstName is required';
-    if (!formData.lastname) formErrors.lastname = 'lastName is required';
-    if (!formData.email) formErrors.email = 'Email is required';
-    if (!formData.phone) formErrors.phone = 'Phone number is required';
-    if (!formData.insurance) formErrors.insurance = 'Insurance coverage is required';
-    if (!formData.message) formErrors.message = 'Message is required';
+    if (!formData.firstname) formErrors.firstname = 'Required';
+    if (!formData.lastname) formErrors.lastname = 'Required';
+    if (!formData.email) formErrors.email = 'Required';
+    if (!formData.phone) formErrors.phone = 'Required';
+    // if (!formData.insurance) formErrors.insurance = 'Required';
+    // if (!formData.message) formErrors.message = 'Required';
     return formErrors;
   };
 
@@ -172,7 +165,7 @@ export default function page() {
               onChange={handleChange}
             />
           </div>
-          {errors.insurance && <span className="error">{errors.insurance}</span>}
+          {/* {errors.insurance && <span className="error">{errors.insurance}</span>} */}
 
         </div>
         <div className="message">
@@ -186,7 +179,7 @@ export default function page() {
               onChange={handleChange}
             />
           </div>
-          {errors.message && <span className="error">{errors.message}</span>}
+          {/* {errors.message && <span className="error">{errors.message}</span>} */}
 
         </div>
         <button type="submit">Get A Quote</button>

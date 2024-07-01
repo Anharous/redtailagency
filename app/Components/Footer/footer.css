@@ -51,11 +51,10 @@
 #footer-link-one, #footer-link-two{
     text-decoration: none;
     color: orangered;
-}
-
-#footer-link-two{
     margin-left: 20px;
 }
+
+
 
 .footer-top-left{
     display: grid;
@@ -66,6 +65,10 @@
     color: white;
     font-family: var(--font-ibm);
     font-size: 35px;
+}
+
+.footer-bottom-link{
+        display: flex;   
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
@@ -128,4 +131,5 @@
         display: flex;
         justify-content: space-between;
     }
+
 }

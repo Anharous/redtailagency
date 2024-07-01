@@ -1,8 +1,14 @@
 import Image from "next/image";
 import './footer.css'
 import Link from "next/link";
+import Data from '../../../data.json'
 
 export default function page(){
+    const icons= Data.footer_icons
+    const contacts = Data.footer_contacts
+    const links = Data.footer_links
+
+
     return(
         <div className="footer">
             <div className="footer-top">
@@ -10,27 +16,24 @@ export default function page(){
                     <Image src='/footer-logo.svg' alt="footer-logo.svg" width={202} height={56}/>
                     <p>Benefit from our decades of industry experience and knowledge, ensuring you receive expert guidance and support at every step of your life insurance journey.</p>
                     <div className="footer-icons">
-                        <Image src="/footer-insta.svg" alt="insta-icon" width={40} height={40}/>
-                        <Image src="/footer-facebook.svg" alt="facebook-icon" width={40} height={40}/>
-                        <Image src="/footer-linkedin.svg" alt="linkedin-icon" width={40} height={40}/>
-                        <Image src="/footer-twitter.svg" alt="twitter-icon" width={40} height={40}/>
+                        {icons.map((icon,index) =>(
+                            <div key={index} className="icons">
+                                <Image src={icon.icon} alt={icon.alt} width={40} height={40}/>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className="footer-vertical-line"></div>
                 <div className="footer-top-right">
                     <h2>Contact info</h2>
-                    <div className="contact">
-                        <Image src="/footer-phone.svg" alt="phone-icon" width={24} height={24}/>
-                        <p>586-907-8700</p>
+                    {contacts.map((contact,index) =>(
+                 
+                    <div key={index} className="contact">
+                        <Image src={contact.image} alt={contact.alt} width={24} height={24}/>
+                        <p>{contact.para}</p>
                     </div>
-                    <div className="contact">
-                        <Image src="/footer-mail.svg" alt="mail-icon" width={24} height={24}/>
-                        <p>sam@redtail.agency</p>
-                    </div>
-                    <div className="contact">
-                        <Image src="/footer-location.svg" alt="location-icon" width={24} height={24}/>
-                        <p>455 E Maple Rd Troy, Michigan 48083, USA.</p>
-                    </div>
+                    
+                    ))}
                 </div>
             </div>
             <div className="footer-bottom">
@@ -38,8 +41,11 @@ export default function page(){
                     <p>© 2024 Redtail Insurance Agency, New York, NY. All Rights Reserved.</p>
                 </div>
                 <div className="footer-bottom-link">
-                    <Link href="/Components/Terms" id="footer-link-one">Terms of use</Link>
-                    <Link href="/Components/Policy" id="footer-link-two">Privacy & Other policies</Link>
+                {links.map((link, index) => (
+                    <div key={index} className="link">
+                        <Link href={link.link} id="footer-link-one">{link.para}</Link>
+                    </div>
+                ))}
                 </div>
             </div>
         </div>

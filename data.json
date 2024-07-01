@@ -1,45 +1,74 @@
 {
     "heros":[
         {
+            "image":"/hero-one.svg",
             "name":"Safeguard Your Business.",
-            "description":"Tailored Insurance Solutions for Every Risk!"
+            "description":"Tailored Insurance Solutions for Every Risk!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-two.svg",
             "name":"Protecting Your Bottom Line.",
-            "description":"Expert Commercial Insurance Tailored for You!"
+            "description":"Expert Commercial Insurance Tailored for You!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-three.svg",
             "name":"Navigate High-Risk Markets with Confidence.",
-            "description":"Your Insurance Partner!"
+            "description":"Your Insurance Partner!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-four.svg",
             "name":"Exceeding Expectations.",
-            "description":"Specialized Coverage for Unique Risks!"
+            "description":"Specialized Coverage for Unique Risks!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-five.svg",
             "name":"Insure Your Success.",
-            "description":"Customized Solutions for Your Business Needs!"
+            "description":"Customized Solutions for Your Business Needs!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-six.svg",
             "name":"Your Shield Against Uncertainty.",
-            "description":"Comprehensive Commercial Insurance!"
+            "description":"Comprehensive Commercial Insurance!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-seven.svg",
             "name":"Unparalleled Protection.",
-            "description":"Trust in our High-Risk expertise!"
+            "description":"Trust in our High-Risk expertise!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-eight.svg",
             "name":"Elevate Your Coverage.",
-            "description":"Commercial insurance that goes above and beyond!"
+            "description":"Commercial insurance that goes above and beyond!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-nine.svg",
             "name":"Secure Your Future.",
-            "description":"Personalized insurance for your business journey!"
+            "description":"Personalized insurance for your business journey!",
+            "button":"Explore"
         },
         {
+            "image":"/hero-ten.svg",
             "name":"Risk Less, Achieve More.",
-            "description":"Unlock your business's full potential with us!"
+            "description":"Unlock your business's full potential with us!",
+            "button":"Explore"
         }
+    ],
+
+    "contents":[
+        {
+            "para1":"At Redtail Insurance Agency, we specialize in providing comprehensive insurance solutions tailored to meet the unique needs of businesses in Michigan. With a focus on high-risk markets, excess and surplus lines, as well as life insurance and annuities for high net worth individuals, we are committed to protecting what matters most to our clients.",
+            "para2":"Our experienced team understands the challenges that businesses face and works tirelessly to provide personalized coverage options that offer peace of mind. Whether you're a small startup or a large corporation, we've got you covered.",
+            "para3":"Explore our website to learn more about our services and how we can help safeguard your business."
+        }
+
     ],
      
     "cards":[
@@ -189,5 +218,60 @@
             ]
         }
         
+    ],
+
+    "footer_icons":[
+        {
+            "icon":"/footer-insta.svg",
+            "alt":"insta-icon",
+            "width":"40",
+            "height":"40"
+        },
+        {
+            "icon":"/footer-facebook.svg",
+            "alt":"facebook-icon",
+            "width":"40",
+            "height":"40"
+        },
+        {
+            "icon":"/footer-linkedin.svg",
+            "alt":"linkedin-icon",
+            "width":"40",
+            "height":"40"
+        },
+        {
+            "icon":"/footer-twitter.svg",
+            "alt":"twitter-icon",
+            "width":"40",
+            "height":"40"
+        }
+    ],
+    "footer_contacts":[
+        {
+            "image":"/footer-phone.svg",
+            "para":"586-907-8700",
+            "alt":"phone-icon"
+        },
+        {
+            "image":"/footer-mail.svg",
+            "para":"sam@redtail.agency",
+            "alt":"mail-icon"
+        },
+        {
+            "image":"/footer-location.svg",
+            "para":"455 E Maple Rd Troy, Michigan 48083, USA.",
+            "alt":"location-icon"
+        }
+
+    ],
+    "footer_links":[
+        {
+            "link":"/Components/Terms",
+            "para":"Terms of use"
+        },
+        {
+            "link":"/Components/Policy",
+            "para":"Privacy & Other policies"
+        }
     ]
 }
