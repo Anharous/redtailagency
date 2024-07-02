@@ -39,8 +39,6 @@ export default function page() {
     if (!formData.lastname) formErrors.lastname = 'Required';
     if (!formData.email) formErrors.email = 'Required';
     if (!formData.phone) formErrors.phone = 'Required';
-    // if (!formData.insurance) formErrors.insurance = 'Required';
-    // if (!formData.message) formErrors.message = 'Required';
     return formErrors;
   };
 
@@ -81,35 +79,35 @@ export default function page() {
 
 
   return (
-    <div className="phase-five">
-            <div className="phase-five-head">
-                <h1>Get in touch!</h1>
-                <div className="phase-five-line"></div>
-            </div>
-    <div className="mail-container">
-    <div className="left">
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="form-para">
-          <h3>Ready to learn more about how Redtail Insurance Agency can help protect your business?</h3>
-          <p>Contact us today to schedule a consultation with one of our experienced agents. We're here to answer your questions and provide personalized insurance solutions that meet your needs.</p>
-        </div>
-        <div className="namesub">
-          <div className="name-container">
-            <label htmlFor="fname">First name</label>
-            <div className="name">
-              <Image src="form-user.svg" alt="user image" width={20} height={20} />
-              <div className="formline"></div>
-              <input
-                placeholder="First name"
-                name="firstname"
-                type="text"
-                value={formData.firstname}
-                onChange={handleChange} />
-                 
-            </div>
-            {errors.firstname && <span className="error">{errors.firstname}</span>}
+    <div id="formPage">
+      <div  className="phase-five" >
+          <div className="phase-five-head">
+            <h1>Get in touch!</h1>
+            <div className="phase-five-line"></div>
           </div>
-          <div className="name-container">
+          <div className="mail-container">
+            <div className="left">
+              <form className="form" onSubmit={handleSubmit}>
+                <div className="form-para">
+                  <h3>Ready to learn more about how Redtail Insurance Agency can help protect your business?</h3>
+                  <p>Contact us today to schedule a consultation with one of our experienced agents. We're here to answer your questions and provide personalized insurance solutions that meet your needs.</p>
+                </div>
+                <div className="namesub">
+                  <div className="name-container">
+                    <label htmlFor="fname">First name</label>
+                    <div className="name">
+                      <Image src="form-user.svg" alt="user image" width={20} height={20} />
+                      <div className="formline"></div>
+                        <input
+                          placeholder="First name"
+                          name="firstname"
+                          type="text"
+                          value={formData.firstname}
+                          onChange={handleChange} />  
+                    </div>
+                    {errors.firstname && <span className="error">{errors.firstname}</span>}
+                  </div>
+                  <div className="name-container">
             <label htmlFor="fname">Last name</label>
             <div className="name">
               <Image src="form-user.svg" alt="user image" width={20} height={20} />
@@ -188,6 +186,7 @@ export default function page() {
     <div className="right">
       <Image src="/form-right-img.svg" alt="persons" width={600} height={750} />
 
+    </div>
     </div>
     </div>
     </div>
