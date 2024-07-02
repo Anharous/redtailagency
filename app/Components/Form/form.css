@@ -34,7 +34,7 @@
   height: 65px;
 }
 
-button{
+#form-button{
   border: none;
   width: 100%;
   background-color: orangered;
@@ -54,7 +54,7 @@ button{
 
 }
 
-.name-container{
+.name-contain{
   margin: 20px 0px;
 }
 
@@ -117,11 +117,24 @@ button{
   font-size: 21px;
 }
 
-.name-container label, .messagebox label{
+.name-contain label, .messagebox label{
   color: #454545;
   font-size: 15px;
   font-family: var(--font-questrial);
 
+}
+
+/* input.error {
+  border: 2px solid red;
+} */
+
+.error-container {
+  border: 1px solid red;
+}
+
+span.error {
+  color: red;
+  font-size: 0.875rem;
 }
 
  
