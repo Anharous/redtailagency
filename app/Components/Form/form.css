@@ -31,7 +31,7 @@
 }
 
 #message{
-  height: 65px;
+  height: 98px;
 }
 
 #form-button{
@@ -137,6 +137,17 @@ span.error {
   font-size: 0.875rem;
 }
 
+/* input:-internal-autofill-selected{
+  background-color: white !important;
+} */
+
+input:focus {
+    background-color: white !important;
+    -webkit-appearance: none; /* Reset appearance for WebKit browsers */
+    -moz-appearance: none; /* Reset appearance for Firefox */
+    appearance: none; /* Reset appearance for modern browsers */ /* Set background color to transparent */
+    /* Add any other styles you want to apply when the input is focused */
+}
  
 @media (min-width: 320px) and (max-width: 650px) {
 

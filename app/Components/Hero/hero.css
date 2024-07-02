@@ -2,8 +2,10 @@
     display: grid;
     grid-auto-flow: column;
     width: 100%;
-    max-width: 1519px;
+    /* max-width: 1519px; */
     overflow: hidden;
+    max-height: 722px;
+    height: 100%;
     
 }
 
@@ -75,13 +77,19 @@
 
     }
 
+    .slider{
+        max-height: 226px;
+    }
+
+
+
     .hero-para{
-        width: 70%;
+        width: 63%;
         padding: 45px 0px 0px 31px;
     }
 
     .hero-para h1{
-        font-size: 33px;
+        font-size: 22px;
     }
 
     .hero-para p {
@@ -98,5 +106,27 @@
 
 @media (min-width: 651px) and (max-width: 1024px) {
 
-    
+    .hero-img{
+        max-width: 750px;
+        /* width: 100%; */
+        max-height: 455px;
+        /* height: 100%; */
+
+    }
+
+    .slider{
+        max-height: 455px;
+    }
+
+    .hero-para{
+        width: 75%;
+    }
+
+    .hero-para h1{
+        font-size: 50px;
+    }
+
+    .hero-para p{
+        font-size: 20px;
+    }
 }
