@@ -4,61 +4,71 @@
             "image":"/hero-one.svg",
             "name":"Safeguard Your Business.",
             "description":"Tailored Insurance Solutions for Every Risk!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-one"
         },
         {
             "image":"/hero-two.svg",
             "name":"Protecting Your Bottom Line.",
             "description":"Expert Commercial Insurance Tailored for You!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-two"
         },
         {
             "image":"/hero-three.svg",
             "name":"Navigate High-Risk Markets with Confidence.",
             "description":"Your Insurance Partner!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-three"
         },
         {
             "image":"/hero-four.svg",
             "name":"Exceeding Expectations.",
             "description":"Specialized Coverage for Unique Risks!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-four"
         },
         {
             "image":"/hero-five.svg",
             "name":"Insure Your Success.",
             "description":"Customized Solutions for Your Business Needs!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-five"
         },
         {
             "image":"/hero-six.svg",
             "name":"Your Shield Against Uncertainty.",
             "description":"Comprehensive Commercial Insurance!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-six"
         },
         {
             "image":"/hero-seven.svg",
             "name":"Unparalleled Protection.",
             "description":"Trust in our High-Risk expertise!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-seven"
         },
         {
             "image":"/hero-eight.svg",
             "name":"Elevate Your Coverage.",
             "description":"Commercial insurance that goes above and beyond!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-eight"
         },
         {
             "image":"/hero-nine.svg",
             "name":"Secure Your Future.",
             "description":"Personalized insurance for your business journey!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-nine"
         },
         {
             "image":"/hero-ten.svg",
             "name":"Risk Less, Achieve More.",
             "description":"Unlock your business's full potential with us!",
-            "button":"Explore"
+            "button":"Explore",
+            "buttonId":"heroButton-ten"
         }
     ],
 
