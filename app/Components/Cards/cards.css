@@ -28,14 +28,17 @@
 .cards-item{
     max-width: 270px;
     width: 100%;
-    /* width: calc(25% - 20px); */
     border: solid 1px #ddd;
     padding: 24px;
     display: grid;
     gap: 10px;
     margin: 12px 12px 20px 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+
+}
+.cards-item:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
 
 }
 
