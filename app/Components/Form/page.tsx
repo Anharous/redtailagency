@@ -109,41 +109,39 @@ export default function page() {
                   <div className="name-contain">
                     <label htmlFor="fname">First name</label>
                     <div className={`name-container ${errors.firstname && touched.firstname ? 'error-container' : ''} ${errors.lastname && touched.lastname ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''}`}>
-                    <div className="name" >
-                      <Image src="form-user.svg" alt="user image" width={20} height={20} />
-                      <div className="formline"></div>
-                        <input
-                          placeholder="First name"
-                          name="firstname"
-                          type="text"
-                          value={formData.firstname}
-                          onChange={handleChange} 
-                          onBlur={handleBlur}
-                          className={errors.firstname && touched.firstname ? 'error' : ''}/>  
+                      <div className="name" >
+                        <Image src="form-user.svg" alt="user image" width={20} height={20} />
+                        <div className="formline"></div>
+                          <input
+                            placeholder="First name"
+                            name="firstname"
+                            type="text"
+                            value={formData.firstname}
+                            onChange={handleChange} 
+                            onBlur={handleBlur}
+                            className={errors.firstname && touched.firstname ? 'error' : ''}/>  
+                      </div>
                     </div>
-                    </div>
-                    {errors.firstname && <span className="error">{errors.firstname}</span>}
-                    
+                    {errors.firstname && <span className="error">{errors.firstname}</span>}                   
                   </div>
                   <div className="name-contain">
-            <label htmlFor="fname">Last name</label>
-            <div className={`name-container ${errors.firstname && touched.firstname ? 'error-container' : ''} ${errors.lastname && touched.lastname ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''}`}>            <div className="name">
-              <Image src="form-user.svg" alt="user image" width={20} height={20} />
-              <div className="formline"></div>
-              <input
-                placeholder="Last name"
-                name="lastname"
-                type="text"
-                value={formData.lastname}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className={errors.lastname && touched.lastname ? 'error' : ''}/>
-            </div>
-            </div>
-            {errors.lastname && <span className="error">{errors.lastname}</span>}
-
-          </div>
-        </div>
+                    <label htmlFor="fname">Last name</label>
+                    <div className={`name-container ${errors.firstname && touched.firstname ? 'error-container' : ''} ${errors.lastname && touched.lastname ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''} ${errors.phone && touched.phone ? 'error-container' : ''}`}>            <div className="name">
+                      <Image src="form-user.svg" alt="user image" width={20} height={20} />
+                      <div className="formline"></div>
+                      <input
+                        placeholder="Last name"
+                        name="lastname"
+                        type="text"
+                        value={formData.lastname}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className={errors.lastname && touched.lastname ? 'error' : ''}/>
+                    </div>
+                    </div>
+                  {errors.lastname && <span className="error">{errors.lastname}</span>}
+                  </div>
+               </div>
         <div className="emailphone">
           <div className="name-contain">
             <label htmlFor="lname">E-name address</label>

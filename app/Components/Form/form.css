@@ -43,6 +43,11 @@
   cursor: pointer;
 }
 
+.right img{
+      max-width: 600px;
+    width: 100%;
+}
+
 .name input, .emailphone input{
   width: 100%;
   width: 100%;
@@ -137,22 +142,16 @@ span.error {
   font-size: 0.875rem;
 }
 
-/* input:-internal-autofill-selected{
-  background-color: white !important;
-} */
 
-input:focus {
-    background-color: white !important;
-    -webkit-appearance: none; /* Reset appearance for WebKit browsers */
-    -moz-appearance: none; /* Reset appearance for Firefox */
-    appearance: none; /* Reset appearance for modern browsers */ /* Set background color to transparent */
-    /* Add any other styles you want to apply when the input is focused */
+input::placeholder{
+    color: #ddd;
 }
  
 @media (min-width: 320px) and (max-width: 650px) {
 
     .mail-container{
         grid-auto-flow: unset;
+        justify-content: center;
     }
     
     .left{
@@ -165,7 +164,8 @@ input:focus {
         max-width: 354px;
         width: 100%;
         max-height: 444px;
-        height: 100%
+        height: 100%;
+        
     }
 
     .right{
@@ -180,11 +180,16 @@ input:focus {
 
     .mail-container{
         grid-auto-flow: unset;
+        justify-content: center;
     }
 
     .left{
         place-self: unset;
         margin-bottom: 30px;
+    }
+
+    .right img{
+      place-self: center;
     }
 
 }

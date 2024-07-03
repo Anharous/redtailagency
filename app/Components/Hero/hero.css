@@ -68,6 +68,7 @@
     box-shadow: #ff6000;
 }
 
+
 @media (min-width: 320px) and (max-width: 650px) {
     .hero-img{
         max-width: 426px;
@@ -80,8 +81,6 @@
     .slider{
         max-height: 226px;
     }
-
-
 
     .hero-para{
         width: 63%;

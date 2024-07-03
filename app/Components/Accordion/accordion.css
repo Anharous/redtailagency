@@ -92,7 +92,8 @@
 @media (min-width: 651px) and (max-width: 1024px) {
 
     .accordion-phase{
-        padding: 69px 69px 65px;
+        padding: 69px 79px 65px;
+        
     }
 
     .accordion-para{

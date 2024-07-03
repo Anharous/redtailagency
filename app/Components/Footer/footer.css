@@ -52,6 +52,7 @@
     text-decoration: none;
     color: orangered;
     margin-left: 20px;
+    display: block;
 }
 
 
@@ -68,7 +69,7 @@
 }
 
 .footer-bottom-link{
-        display: flex;   
+    display: flex;   
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
@@ -98,6 +99,11 @@
     .footer-bottom-link{
         display: flex;
         justify-content: space-between;
+    }
+
+    #footer-link-one, #footer-link-two{
+        margin-left: 0px;
+        display: block;
     }
 }
 
