@@ -12,7 +12,10 @@
     margin-bottom: 14px;
     font-family: var(--font-ibm);
 }
-
+.cards-container{
+    display: grid;
+    justify-content: center;
+}
 .cards-line{
     border: solid 4px orangered;
     width: 160px;
@@ -22,7 +25,7 @@
 
 .cards-item-container{
     padding: 40px 40px;
-    display: ruby-text;
+    display: ruby;
 }
 
 .cards-item{
@@ -106,3 +109,4 @@
     }
 
 } 
+
